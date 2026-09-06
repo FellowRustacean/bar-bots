@@ -1,0 +1,15 @@
+{
+    "Beleidigung": { "min": 3, "max": 9 }
+    , "Team-Beleidigung": { "min": 15, "max": 35 }
+
+    , "Spam (Einzel-Channel)": 3
+    , "Spam (Multi-Channel)": 9
+    , "Channel Hopping": 6
+    , "Trolling": 9
+
+    , "Werbung auf Server": 9
+    , "Werbung über DMs": 21
+
+    , "lewd/nsfw": { "min": 15, "max": 45 }
+    , "Hassrede/Drohung/Aggression": { "min": 15, "max": 45 }
+}

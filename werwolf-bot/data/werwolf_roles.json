@@ -1,0 +1,58 @@
+{
+  "Dorfbewohner": {
+    "team": "Dorf",
+    "description": "Keine besonderen Fähigkeiten. Hilft dem Dorf durch Diskussion und Abstimmung, die Werwölfe zu enttarnen."
+  },
+  "Doktor": {
+    "team": "Dorf",
+    "description": "Kann jede Nacht einen Spieler auswählen, der in dieser Nacht nicht getötet werden kann."
+  },
+  "Jäger": {
+    "team": "Dorf",
+    "description": "Wählt in der ersten Nacht einen anderen Spieler als sein Ziel. Stirbt der Jäger, stirbt auch dieser Spieler."
+  },
+  "Priester": {
+    "team": "Dorf",
+    "description": "Kann einmal im Spiel heiliges Wasser auf einen anderen Spieler werfen. Ist dieser Spieler ein Werwolf, stirbt der Werwolf - andernfalls stirbt der Priester."
+  },
+  "Seher": {
+    "team": "Dorf",
+    "description": "Kann jede Nacht die Rolle eines beliebigen Spielers ansehen."
+  },
+  "Hexe": {
+    "team": "Dorf",
+    "description": "Besitzt zwei Tränke: Ein Trank tötet einen beliebigen Spieler, der andere bewahrt einen Spieler vor dem Tod."
+  },
+  "Amor": {
+    "team": "Dorf",
+    "description": "Verliebt in der ersten Nacht zwei Spieler ineinander. Stirbt einer der beiden, stirbt auch der andere."
+  },
+  "Schütze": {
+    "team": "Dorf",
+    "description": "Kann zwei Mal im Spiel einen beliebigen Spieler töten. Nach dem ersten Schuss wird seine Rolle offengelegt."
+  },
+  "Aura-Seher": {
+    "team": "Dorf",
+    "description": "Kann jede Nacht sehen, ob ein Spieler gut oder böse ist (ohne die genaue Rolle zu erfahren)."
+  },
+  "Werwolf": {
+    "team": "Werwölfe",
+    "description": "Einigt sich nachts gemeinsam mit den anderen Werwölfen darauf, einen beliebigen Spieler zu töten."
+  },
+  "Werwolf Schamane": {
+    "team": "Werwölfe",
+    "description": "Kann in der Nacht einen Spieler festlegen, der dem Seher in dieser Nacht fälschlicherweise als Werwolf angezeigt wird."
+  },
+  "Narr": {
+    "team": "Solo",
+    "description": "Keine besondere Fähigkeit. Wird er vom Dorf per Abstimmung getötet, gewinnt er sofort das Spiel."
+  },
+  "Kopfgeldjäger": {
+    "team": "Solo",
+    "description": "Erhält zu Spielbeginn ein zufälliges Ziel. Gewinnt, wenn er das Dorf dazu bringt, sein Ziel zu töten."
+  },
+  "Brandstifter": {
+    "team": "Solo",
+    "description": "Kann jede Nacht zwei Spieler mit Benzin überschütten oder alle bisher überschütteten Spieler anzünden und damit töten. Kann nicht von Werwölfen getötet werden. Gewinnt, wenn er der letzte lebende Spieler ist."
+  }
+}

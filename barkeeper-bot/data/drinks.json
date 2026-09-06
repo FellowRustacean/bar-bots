@@ -1,0 +1,694 @@
+{
+  "Wasser": {
+    "artikel": "das",
+    "steps": [
+      "*Öffnet den Kühlschrank...*",
+      "*Nimmt eine Wasserflasche und öffnet den Kronkorken **pop***",
+      "*Schüttet das Wasser in ein Glas und schiebt es über den Tresen zu {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Wasser mit Kohlensäure": {
+    "artikel": "das",
+    "steps": [
+      "*Greift zur Sprudelflasche...*",
+      "*Löst den Verschluss - **zisch***",
+      "*Füllt ein Glas bis zum Rand mit Sprudel*",
+      "*Stellt es vor {user} ab*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Schwäbische Schorle": {
+    "artikel": "die",
+    "steps": [
+      "*Greift eine Flasche Sprudel...*",
+      "*Nimmt ein Glas und füllt es zur Hälfte mit Sprudel...*",
+      "*Hält das Glas unter den Wasserhahn und füllt den Rest mit Leitungswasser...*",
+      "*Stellt {user} das Glas mit einem Augenzwinkern hin*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Cola": {
+    "artikel": "die",
+    "steps": [
+      "*Kramt im Kühlschrank nach der Cola...*",
+      "*Öffnet die Flasche - **pssst***",
+      "*Wirft zwei Eiswürfel ins Glas und gießt die Cola darüber*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Fassbrause Zitrone": {
+    "artikel": "die",
+    "steps": [
+      "*Holt eine Flasche Fassbrause Zitrone aus der Kühlung...*",
+      "*Öffnet den Kronkorken **pop***",
+      "*Gießt die Fassbrause vorsichtig ins Glas, damit sie nicht überschäumt*",
+      "*Reicht das Glas {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Fassbrause Kirsche": {
+    "artikel": "die",
+    "steps": [
+      "*Sucht die Kirsch-Fassbrause im Regal...*",
+      "*Öffnet die Flasche **pop***",
+      "*Lässt die Fassbrause langsam ins Glas laufen*",
+      "*Stellt es {user} hin*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Fassbrause Holunder": {
+    "artikel": "die",
+    "steps": [
+      "*Nimmt eine Flasche Holunder-Fassbrause...*",
+      "*Öffnet sie mit dem Flaschenöffner **pop***",
+      "*Füllt das Glas und wartet, bis der Schaum sich legt*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Apfelschorle": {
+    "artikel": "die",
+    "steps": [
+      "*Nimmt eine Flasche Apfelsaft aus dem Regal...*",
+      "*Gießt Apfelsaft und Sprudelwasser zu gleichen Teilen ins Glas*",
+      "*Rührt kurz um*",
+      "*Stellt das Glas vor {user} ab*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Ginger Ale": {
+    "artikel": "das",
+    "steps": [
+      "*Holt das Ginger Ale aus der Kühlung...*",
+      "*Öffnet die Flasche - **zisch***",
+      "*Füllt ein Glas mit Eis und gießt das Ginger Ale darüber*",
+      "*Reicht es {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Virgin Mojito": {
+    "artikel": "der",
+    "steps": [
+      "*Zupft frische Minzblätter ab...*",
+      "*Gibt Minze, Limettenspalten und etwas braunen Zucker ins Glas und zerstößt alles leicht*",
+      "*Füllt mit Eis auf und gießt Sprudelwasser dazu*",
+      "*Rührt einmal um und schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Mocktails",
+    "vorrat": "zutaten"
+  },
+  "Shirley Temple": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt ein Glas mit Eiswürfeln...*",
+      "*Gießt Ginger Ale hinein*",
+      "*Gibt einen Schuss Grenadine dazu, der sich langsam am Boden sammelt*",
+      "*Spießt eine Cocktailkirsche auf und legt sie oben drauf, bevor es zu {user} geht*"
+    ],
+    "kategorie": "Mocktails",
+    "vorrat": "zutaten"
+  },
+  "Virgin Piña Colada": {
+    "artikel": "die",
+    "steps": [
+      "*Nimmt Ananassaft, Kokosmilch und Eis aus der Kühlung...*",
+      "*Gibt alles in den Mixer*",
+      "*Lässt den Mixer kurz laufen **wrrrr***",
+      "*Gießt die cremige Mischung ins Glas und reicht sie {user}*"
+    ],
+    "kategorie": "Mocktails",
+    "vorrat": "zutaten"
+  },
+  "Cranberry Fizz": {
+    "artikel": "der",
+    "steps": [
+      "*Greift zur Cranberrysaft-Flasche...*",
+      "*Füllt ein Glas zur Hälfte mit Cranberrysaft*",
+      "*Gießt Sprudelwasser und einen Spritzer Limette dazu*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Mocktails",
+    "vorrat": "zutaten"
+  },
+  "Mojito": {
+    "artikel": "der",
+    "steps": [
+      "*Zupft frische Minze ab und gibt sie mit Limette und Zucker ins Glas...*",
+      "*Zerstößt alles vorsichtig mit dem Stößel*",
+      "*Gießt weißen Rum darüber und füllt mit Eis und Sprudelwasser auf*",
+      "*Rührt kurz um und stellt das Glas vor {user} ab*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Gin Tonic": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt ein großes Glas mit Eiswürfeln...*",
+      "*Gießt einen ordentlichen Schuss Gin darüber*",
+      "*Füllt mit Tonic Water auf, bis es leicht sprudelt*",
+      "*Legt eine Gurkenscheibe obenauf und schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Whiskey Sour": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Whiskey, frischen Zitronensaft und etwas Zuckersirup in den Shaker...*",
+      "*Wirft ein paar Eiswürfel dazu und schließt den Shaker*",
+      "*Schüttelt kräftig **shake shake shake***",
+      "*Seiht den Drink über Eis ab und reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Old Fashioned": {
+    "artikel": "der",
+    "steps": [
+      "*Legt einen Zuckerwürfel ins Glas und tränkt ihn mit Angostura Bitter...*",
+      "*Zerdrückt den Zucker vorsichtig*",
+      "*Gießt Bourbon darüber und fügt einen großen Eiswürfel hinzu*",
+      "*Rührt langsam um und garniert mit einer Orangenzeste, bevor es zu {user} geht*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Cosmopolitan": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Wodka, Cointreau, Cranberrysaft und frischen Limettensaft in den Shaker...*",
+      "*Schließt den Shaker und schüttelt kräftig über Eis*",
+      "*Seiht die Mischung in ein gekühltes Glas ab*",
+      "*Hängt eine Orangenzeste an den Glasrand und stellt es vor {user} ab*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Piña Colada": {
+    "artikel": "die",
+    "steps": [
+      "*Nimmt weißen Rum, Ananassaft und Kokoscreme aus dem Regal...*",
+      "*Gibt alles zusammen mit Eis in den Mixer*",
+      "*Lässt den Mixer laufen, bis die Mischung schön cremig ist **wrrrr***",
+      "*Gießt sie ins Glas, steckt einen Strohhalm rein und reicht sie {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Negroni": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Gin, Campari und roten Wermut zu gleichen Teilen ins Rührglas...*",
+      "*Fügt Eiswürfel hinzu und rührt lange und ruhig*",
+      "*Seiht den Drink über einen großen Eiswürfel ins Glas ab*",
+      "*Legt eine Orangenscheibe dazu und schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Moscow Mule": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt einen Kupferbecher mit Eis...*",
+      "*Gießt Wodka und frischen Limettensaft dazu*",
+      "*Füllt mit Ginger Beer auf, bis es leicht überschäumt*",
+      "*Garniert mit einer Limettenscheibe und stellt den Becher vor {user} ab*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Limonade": {
+    "artikel": "die",
+    "steps": [
+      "*Presst frische Zitronen aus...*",
+      "*Rührt Zucker ein, bis er sich auflöst*",
+      "*Gießt alles über Eis in ein Glas*",
+      "*Reicht das Glas {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Eistee": {
+    "artikel": "der",
+    "steps": [
+      "*Brüht starken Schwarztee auf und lässt ihn abkühlen...*",
+      "*Gibt Eiswürfel und eine Zitronenscheibe ins Glas*",
+      "*Gießt den kalten Tee darüber*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Kaffee": {
+    "artikel": "der",
+    "steps": [
+      "*Mahlt frische Kaffeebohnen...*",
+      "*Lässt die Maschine durchlaufen **blubb***",
+      "*Gießt den Kaffee in eine Tasse*",
+      "*Stellt die Tasse vor {user} ab*"
+    ],
+    "kategorie": "Heißgetränke",
+    "vorrat": "kaffee"
+  },
+  "Espresso": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt gemahlenen Espresso ins Sieb...*",
+      "*Startet die Siebträgermaschine **zisch***",
+      "*Fängt den Espresso in einer kleinen Tasse auf*",
+      "*Reicht ihn {user}*"
+    ],
+    "kategorie": "Heißgetränke",
+    "vorrat": "kaffee"
+  },
+  "Tee": {
+    "artikel": "der",
+    "steps": [
+      "*Wählt eine Teemischung aus...*",
+      "*Übergießt die Blätter mit heißem Wasser*",
+      "*Lässt den Tee ziehen*",
+      "*Stellt die Tasse vor {user} ab*"
+    ],
+    "kategorie": "Heißgetränke",
+    "vorrat": "flaschen"
+  },
+  "Heiße Schokolade": {
+    "artikel": "die",
+    "steps": [
+      "*Erhitzt Milch in einem Topf...*",
+      "*Rührt Kakaopulver und etwas Zucker ein*",
+      "*Gibt einen Klecks Sahne obenauf*",
+      "*Reicht die Tasse {user}*"
+    ],
+    "kategorie": "Heißgetränke",
+    "vorrat": "flaschen"
+  },
+  "Milch": {
+    "artikel": "die",
+    "steps": [
+      "*Holt eine Flasche Milch aus dem Kühlschrank...*",
+      "*Schüttelt sie kurz*",
+      "*Gießt die Milch in ein Glas*",
+      "*Stellt es vor {user} ab*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Energy Drink": {
+    "artikel": "der",
+    "steps": [
+      "*Nimmt eine Dose aus der Kühlung...*",
+      "*Öffnet sie **knack***",
+      "*Gießt den Energy Drink über Eis*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Malzbier": {
+    "artikel": "das",
+    "steps": [
+      "*Holt eine Flasche Malzbier...*",
+      "*Öffnet den Kronkorken **pop***",
+      "*Gießt es langsam ins Glas, damit der Schaum nicht überläuft*",
+      "*Reicht es {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Traubensaft": {
+    "artikel": "der",
+    "steps": [
+      "*Nimmt eine Flasche Traubensaft aus dem Regal...*",
+      "*Gießt den Saft in ein Glas*",
+      "*Wirft einen Eiswürfel dazu*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Virgin Caipirinha": {
+    "artikel": "die",
+    "steps": [
+      "*Schneidet eine Limette in Stücke...*",
+      "*Gibt sie mit braunem Zucker ins Glas und zerstößt alles*",
+      "*Füllt mit zerstoßenem Eis auf*",
+      "*Rührt um und reicht das Glas {user}*"
+    ],
+    "kategorie": "Mocktails",
+    "vorrat": "zutaten"
+  },
+  "Ginger Lemonade": {
+    "artikel": "die",
+    "steps": [
+      "*Presst frische Zitronen aus...*",
+      "*Gibt einen Schuss Ingwersirup dazu*",
+      "*Füllt mit Sprudelwasser und Eis auf*",
+      "*Rührt kurz um und stellt das Glas vor {user} ab*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Blue Lagoon (alkoholfrei)": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt blauen Sirup ins Glas...*",
+      "*Füllt mit Zitronenlimonade auf, sodass es leuchtend blau schimmert*",
+      "*Wirft ein paar Eiswürfel dazu*",
+      "*Reicht das Glas {user}*"
+    ],
+    "kategorie": "Mocktails",
+    "vorrat": "zutaten"
+  },
+  "Fruchtpunsch": {
+    "artikel": "der",
+    "steps": [
+      "*Mischt verschiedene Fruchtsäfte in einer Karaffe...*",
+      "*Gibt Eiswürfel und Orangenscheiben dazu*",
+      "*Rührt einmal um*",
+      "*Schenkt ein Glas ein und reicht es {user}*"
+    ],
+    "kategorie": "Softdrinks",
+    "vorrat": "flaschen"
+  },
+  "Bier": {
+    "artikel": "das",
+    "steps": [
+      "*Nimmt ein Glas und kippt es leicht...*",
+      "*Zapft das Bier langsam an **zisch***",
+      "*Lässt es kurz ruhen, bis der Schaum sich setzt*",
+      "*Stellt das Glas vor {user} ab*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Weizenbier": {
+    "artikel": "das",
+    "steps": [
+      "*Nimmt ein hohes Weizenglas...*",
+      "*Öffnet die Flasche **pop***",
+      "*Gießt das Bier in einem Schwung ein, sodass die Hefe aufgewirbelt wird*",
+      "*Reicht das Glas {user}*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Radler": {
+    "artikel": "das",
+    "steps": [
+      "*Nimmt ein Glas Bier...*",
+      "*Mischt es zur Hälfte mit Zitronenlimonade*",
+      "*Rührt vorsichtig um*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Rotwein": {
+    "artikel": "der",
+    "steps": [
+      "*Entkorkt eine Flasche Rotwein **plopp**...*",
+      "*Lässt ihn kurz atmen*",
+      "*Schenkt ein Glas ein*",
+      "*Reicht es {user}*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Weißwein": {
+    "artikel": "der",
+    "steps": [
+      "*Nimmt eine gekühlte Flasche Weißwein aus dem Eisfach...*",
+      "*Entkorkt sie **plopp***",
+      "*Schenkt ein Glas ein*",
+      "*Stellt es vor {user} ab*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Sekt": {
+    "artikel": "der",
+    "steps": [
+      "*Nimmt eine Flasche Sekt aus dem Kühler...*",
+      "*Öffnet sie vorsichtig **plopp***",
+      "*Schenkt ein Glas ein, das leicht überschäumt*",
+      "*Reicht das Glas {user}*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Prosecco": {
+    "artikel": "der",
+    "steps": [
+      "*Holt eine gekühlte Flasche Prosecco...*",
+      "*Öffnet sie behutsam **plopp***",
+      "*Schenkt ein Glas ein*",
+      "*Stellt es vor {user} ab*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Champagner": {
+    "artikel": "der",
+    "steps": [
+      "*Nimmt eine Flasche Champagner aus dem Eiskübel...*",
+      "*Löst die Agraffe und öffnet sie **knall***",
+      "*Schenkt langsam ein Glas ein*",
+      "*Reicht es {user} mit einem Lächeln*"
+    ],
+    "kategorie": "Bier & Wein",
+    "vorrat": "flaschen"
+  },
+  "Daiquiri": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt weißen Rum, frischen Limettensaft und Zuckersirup in den Shaker...*",
+      "*Füllt mit Eis auf und schüttelt kräftig **shake shake shake***",
+      "*Seiht den Drink in ein gekühltes Glas ab*",
+      "*Reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Margarita": {
+    "artikel": "die",
+    "steps": [
+      "*Reibt den Glasrand mit einer Limette ein und taucht ihn in Salz...*",
+      "*Gibt Tequila, Triple Sec und Limettensaft in den Shaker*",
+      "*Schüttelt kräftig über Eis*",
+      "*Seiht die Margarita ins vorbereitete Glas ab und reicht sie {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Mai Tai": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt braunen und weißen Rum mit Limettensaft und Orgeat-Sirup in den Shaker...*",
+      "*Schüttelt kräftig über Eis*",
+      "*Gießt alles in ein Glas mit zerstoßenem Eis*",
+      "*Garniert mit Minze und reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Long Island Iced Tea": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Wodka, Gin, Rum, Tequila und Triple Sec ins Glas...*",
+      "*Fügt Zitronensaft und einen Schuss Cola hinzu*",
+      "*Rührt kurz um*",
+      "*Schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Sex on the Beach": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Wodka und Pfirsichlikör ins Glas...*",
+      "*Füllt mit Orangensaft und Cranberrysaft auf*",
+      "*Rührt vorsichtig um, sodass ein Farbverlauf entsteht*",
+      "*Reicht das Glas {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Tequila Sunrise": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt ein Glas mit Eis und gießt Tequila und Orangensaft dazu...*",
+      "*Lässt Grenadine langsam am Glasrand herunterlaufen*",
+      "*Wartet, bis sich der Sonnenaufgang-Effekt bildet*",
+      "*Stellt das Glas vor {user} ab*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Bloody Mary": {
+    "artikel": "die",
+    "steps": [
+      "*Gibt Wodka und Tomatensaft ins Glas...*",
+      "*Würzt mit Worcestersauce, Tabasco, Salz und Pfeffer*",
+      "*Rührt kräftig um*",
+      "*Garniert mit einer Selleriestange und reicht sie {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Espresso Martini": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Wodka, Kaffeelikör und einen frischen Espresso in den Shaker...*",
+      "*Schüttelt kräftig, bis sich Schaum bildet **shake shake shake***",
+      "*Seiht den Drink in ein gekühltes Glas ab*",
+      "*Reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Mint Julep": {
+    "artikel": "der",
+    "steps": [
+      "*Zerstößt frische Minze mit etwas Zuckersirup im Becher...*",
+      "*Füllt mit zerstoßenem Eis auf*",
+      "*Gießt Bourbon darüber*",
+      "*Garniert mit einem Minzzweig und reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Caipirinha": {
+    "artikel": "die",
+    "steps": [
+      "*Schneidet eine Limette in Stücke und gibt sie mit Zucker ins Glas...*",
+      "*Zerstößt alles kräftig*",
+      "*Gießt Cachaça darüber und füllt mit zerstoßenem Eis auf*",
+      "*Rührt um und reicht das Glas {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Aperol Spritz": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt ein großes Glas mit Eis...*",
+      "*Gießt Prosecco und Aperol im Verhältnis 3:2 dazu*",
+      "*Gibt einen Schuss Sprudelwasser hinzu*",
+      "*Garniert mit einer Orangenscheibe und reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Hugo": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt ein Glas mit Eis und frischer Minze...*",
+      "*Gießt Prosecco und einen Schuss Holunderblütensirup dazu*",
+      "*Füllt mit Sprudelwasser auf*",
+      "*Rührt vorsichtig um und reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Dark 'n' Stormy": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt ein Glas mit Eis...*",
+      "*Gießt dunklen Rum darüber*",
+      "*Füllt mit Ginger Beer auf, bis es leicht überschäumt*",
+      "*Garniert mit Limette und reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Paloma": {
+    "artikel": "die",
+    "steps": [
+      "*Füllt ein Glas mit Eis...*",
+      "*Gießt Tequila und frischen Limettensaft dazu*",
+      "*Füllt mit Grapefruit-Limonade auf*",
+      "*Rührt kurz um und reicht sie {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Manhattan": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Bourbon, roten Wermut und Angostura Bitter ins Rührglas...*",
+      "*Rührt lange und ruhig mit Eis*",
+      "*Seiht den Drink in ein gekühltes Glas ab*",
+      "*Garniert mit einer Cocktailkirsche und reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Amaretto Sour": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Amaretto, Zitronensaft und Zuckersirup in den Shaker...*",
+      "*Schüttelt kräftig über Eis **shake shake shake***",
+      "*Seiht den Drink über frisches Eis ab*",
+      "*Reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "French 75": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Gin, Zitronensaft und Zuckersirup in den Shaker...*",
+      "*Schüttelt kräftig und seiht in ein Glas ab*",
+      "*Füllt mit Champagner auf*",
+      "*Reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Screwdriver": {
+    "artikel": "der",
+    "steps": [
+      "*Füllt ein Glas mit Eis...*",
+      "*Gießt Wodka darüber*",
+      "*Füllt mit frischem Orangensaft auf*",
+      "*Rührt um und schiebt das Glas zu {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Kir Royal": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt einen Schuss Cassis-Likör ins Glas...*",
+      "*Füllt langsam mit Champagner auf*",
+      "*Wartet, bis die Farbe sich verteilt*",
+      "*Reicht das Glas {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  },
+  "Sidecar": {
+    "artikel": "der",
+    "steps": [
+      "*Gibt Cognac, Cointreau und frischen Zitronensaft in den Shaker...*",
+      "*Schüttelt kräftig über Eis*",
+      "*Seiht den Drink in ein mit Zucker umrandetes Glas ab*",
+      "*Reicht ihn {user}*"
+    ],
+    "kategorie": "Cocktails",
+    "vorrat": "zutaten"
+  }
+}

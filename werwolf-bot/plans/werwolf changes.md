@@ -1,0 +1,3 @@
+- Verliebte sollen @User ihren Partner bei /werwolf me sehen
+- </werwolf me:1540518139610267678> soll hinterlegt werden statt nur `/werwolf me`
+- 
