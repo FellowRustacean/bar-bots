@@ -33,6 +33,7 @@ const badgeRegistry = require('./utils/badges/badgeRegistry');
 const { ensureBadgeCatalog } = require('./storage/badges');
 const {
   handleMessage: handleActivityMessage,
+  handleBumpConfirmation,
   handleVoiceStateUpdate: handleActivityVoiceStateUpdate,
   initializeVoiceSessions,
   startHourlyTick,
@@ -178,13 +179,19 @@ client.on('messageCreate', async (message) => {
 
     // Eigene kurzlebige Kopie fuer den Loeschungs-Log, unabhaengig vom RAM-Nachrichten-Cache -
     // siehe Kommentar bei recent_message_content in shared/lib/schema.js.
-    if (message.guild && message.author) {
+    if (message.guild && message.author && !message.author.bot) {
       try {
         recordMessageContent(message);
       } catch (err) {
         await logError(err, { context: 'Nachrichteninhalt zwischenspeichern', guildId: message.guild?.id });
       }
     }
+  }
+
+  try {
+    handleBumpConfirmation(message);
+  } catch (err) {
+    await logError(err, { context: 'Bump-XP', guildId: message.guild?.id });
   }
 
   try {
@@ -233,7 +240,7 @@ client.on('messageUpdate', async (oldMessage, newMessage) => {
 
   // Zwischenspeicherte Kopie auf den neuesten Stand bringen, damit ein spaeterer Loeschungs-Log
   // (falls die Nachricht inzwischen aus dem RAM-Cache gefallen ist) den aktuellen Inhalt zeigt.
-  if (newMessage.guild && newMessage.author) {
+  if (newMessage.guild && newMessage.author && !newMessage.author.bot) {
     try {
       recordMessageContent(newMessage);
     } catch (err) {

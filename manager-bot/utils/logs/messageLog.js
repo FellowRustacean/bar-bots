@@ -25,6 +25,15 @@ const CLEANUP_INTERVAL_MS = 6 * 60 * 60 * 1000; // alle 6 Stunden prüfen
 const DELETE_COLOR = 0xed4245;
 const EDIT_COLOR = 0xfee75c;
 const AUDIT_LOG_MATCH_WINDOW_MS = 10_000;
+const DISCORD_EPOCH_MS = 1420070400000n;
+
+// Baut eine synthetische Discord-Snowflake für einen Zeitpunkt (untere Sequenz-Bits = 0), damit
+// `before: <id>` direkt zu den alten Nachrichten springt statt bei jedem Lauf komplett von "jetzt"
+// aus rückwärts durch den gesamten (bei aktiven Log-Channels ggf. tausende Nachrichten großen)
+// jüngeren Bestand zu blättern - siehe Kommentar bei cleanupChannel.
+function snowflakeAt(timestampMs) {
+  return ((BigInt(timestampMs) - DISCORD_EPOCH_MS) << 22n).toString();
+}
 
 function truncate(text) {
   if (!text) return '*Kein Textinhalt*';
@@ -70,7 +79,7 @@ async function getMessageLogChannel(guild) {
 }
 
 function isLoggable(message) {
-  return Boolean(message.guild) && Boolean(message.author) && message.author.id !== message.client.user.id;
+  return Boolean(message.guild) && Boolean(message.author) && !message.author.bot;
 }
 
 // Discord legt nur dann einen Audit-Log-Eintrag für eine gelöschte Nachricht an, wenn ein
@@ -115,8 +124,10 @@ async function logMessageDelete(message) {
 
   const stored = getStoredMessageContent(message.id);
 
+  if (message.author && message.author.bot) return;
+
   const authorId = message.author?.id ?? stored?.authorId;
-  if (!authorId || authorId === message.client.user.id) return;
+  if (!authorId) return;
 
   const authorTag = message.author?.tag ?? stored?.authorTag ?? 'Unbekannt';
   const authorMention = `<@${authorId}>`;
@@ -222,12 +233,19 @@ async function mirrorVoiceChannelMessage(message) {
 // funktioniert nur für Nachrichten <14 Tage - für den seltenen Fall, dass der Bot länger
 // als 14 Tage offline war (Nachrichten also schon älter sind, wenn sie erstmals geprüft
 // werden), wird auf einzelnes Löschen zurückgefallen.
+//
+// Start-Punkt ist bewusst die Cutoff-Snowflake (nicht "jetzt"): bei einem regen Log-Channel
+// liegen zwischen den neuesten Nachrichten und der 7-Tage-Grenze leicht mehrere tausend jüngere
+// Einträge, durch die man sich sonst bei jedem einzelnen Lauf erst zurückblättern müsste. Startet
+// ein Neustart des Bots (z. B. während aktiver Entwicklung mehrfach täglich) diesen Lauf immer
+// wieder neu von vorn, kam er dadurch nie bis zu den wirklich alten Nachrichten durch - genau das
+// beobachtete "nach Neustarts wird nichts mehr aufgeräumt".
 async function cleanupChannel(channel, botUserId) {
   const cutoff = Date.now() - RETENTION_MS;
-  let lastId;
+  let lastId = snowflakeAt(cutoff);
 
   for (;;) {
-    const batch = await channel.messages.fetch({ limit: 100, ...(lastId ? { before: lastId } : {}) });
+    const batch = await channel.messages.fetch({ limit: 100, before: lastId });
     if (batch.size === 0) break;
 
     const toDelete = batch.filter((m) => m.author.id === botUserId && m.createdTimestamp < cutoff);

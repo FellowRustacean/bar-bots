@@ -5,10 +5,12 @@ const { touchActivity } = require('../../storage/memberActivity');
 const { hasServerTag } = require('../../../shared/lib/serverTag');
 const { checkReferralActivation } = require('../referrals/referralActivation');
 
-const MESSAGE_XP = 5;
-const MESSAGE_COOLDOWN_MS = 60 * 1000;
+const MESSAGE_XP = 2;
+const MESSAGE_COOLDOWN_MS = 20 * 1000;
 const VOICE_XP_PER_MINUTE = 3;
 const HOUR_MS = 60 * 60 * 1000;
+const DISBOARD_BOT_ID = '302050872383242240';
+const BUMP_XP = 20;
 
 // Nitro-Booster bekommen 20% mehr XP, Träger des eigenen Server-Tags nochmal 10% - beide Boni
 // addieren sich (nicht multiplikativ), damit z. B. ein Booster mit Server-Tag klar +30% bekommt
@@ -54,6 +56,28 @@ function handleMessage(message) {
   const amount = applyBonus(MESSAGE_XP, message.member);
   addXp(message.guild.id, message.author.id, amount, 'message');
   checkReferralActivation(message.guild.id, message.author.id);
+}
+
+// Disboard antwortet auf /bump immer mit einem Embed, auch im Fehlerfall (z. B. Cooldown noch
+// nicht abgelaufen) - "Bump done" im Titel/Text ist die einzige zuverlässige Erfolgsmarkierung.
+// Der ausführende Nutzer steht bei Slash-Command-Antworten in message.interaction.user, nicht im
+// (Disboard-eigenen) message.author.
+function isBumpSuccess(message) {
+  const embed = message.embeds?.[0];
+  if (!embed) return false;
+  const text = `${embed.title ?? ''} ${embed.description ?? ''}`.toLowerCase();
+  return text.includes('bump done');
+}
+
+function handleBumpConfirmation(message) {
+  if (!message.guild || message.author?.id !== DISBOARD_BOT_ID) return;
+  if (message.interaction?.commandName !== 'bump') return;
+  if (!isBumpSuccess(message)) return;
+
+  const userId = message.interaction.user?.id;
+  if (!userId) return;
+
+  addXp(message.guild.id, userId, BUMP_XP, 'bump');
 }
 
 // Rechnet die seit Sitzungsbeginn vergangene Zeit ab: immer für Statistiken,
@@ -146,6 +170,7 @@ function startHourlyTick(client) {
 
 module.exports = {
   handleMessage,
+  handleBumpConfirmation,
   handleVoiceStateUpdate,
   initializeVoiceSessions,
   startHourlyTick,
