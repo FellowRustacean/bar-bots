@@ -59,14 +59,16 @@ function handleMessage(message) {
 }
 
 // Disboard antwortet auf /bump immer mit einem Embed, auch im Fehlerfall (z. B. Cooldown noch
-// nicht abgelaufen) - "Bump done" im Titel/Text ist die einzige zuverlässige Erfolgsmarkierung.
+// nicht abgelaufen) - der sichtbare Erfolgstext ("Bump done!"/"Bump erfolgreich!"/...) ist
+// sprachabhängig (Disboard antwortet in der auf dem Server eingestellten Sprache), also kein
+// verlässliches Signal. Der Link "disboard.org/server/<guildId>" taucht dagegen nur im
+// Erfolgsfall auf und ist sprachunabhängig, da er Teil der URL statt des angezeigten Texts ist.
 // Der ausführende Nutzer steht bei Slash-Command-Antworten in message.interaction.user, nicht im
 // (Disboard-eigenen) message.author.
 function isBumpSuccess(message) {
   const embed = message.embeds?.[0];
   if (!embed) return false;
-  const text = `${embed.title ?? ''} ${embed.description ?? ''}`.toLowerCase();
-  return text.includes('bump done');
+  return (embed.description ?? '').includes(`disboard.org/server/${message.guild.id}`);
 }
 
 function handleBumpConfirmation(message) {
