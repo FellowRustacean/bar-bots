@@ -1,0 +1,16 @@
+{
+  "name": "Kellner",
+  "version": "1.0.0",
+  "description": "Verwaltet die Custom-Voice-Channels",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "better-sqlite3": "^13.0.3",
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Techniker",
+  "version": "1.0.0",
+  "description": "Technik und Wartung im Hintergrund",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "@napi-rs/canvas": "^1.0.8",
+    "better-sqlite3": "^13.0.3",
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.4.5"
+  }
+}

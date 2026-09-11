@@ -1,0 +1,20 @@
+{
+  "tableWipe": [
+    "Wischt schnell mit einem Lappen die groben Krümel vom Tisch",
+    "Fegt mit einem Besen die Erdnussschalen vom Boden",
+    "Wischt mit einem feuchten Lappen über die Tischplatte",
+    "Räumt ein paar leere Gläser vom Tisch ab",
+    "Klopft das Tischtuch aus",
+    "Poliert die Tischplatte kurz auf Hochglanz",
+    "Sammelt ein paar vergessene Bierdeckel ein",
+    "Rückt die Stühle ordentlich an den Tisch",
+    "Wischt eine verschüttete Pfütze vom Tisch",
+    "Legt frische Servietten auf den Tisch",
+    "Zündet eine neue Kerze auf dem Tisch an"
+  ],
+  "snackDelivery": [
+    "stellt {snack} auf den Tisch",
+    "bringt {snack} an den Tisch",
+    "stellt eine Schale mit {snack} auf den Tisch"
+  ]
+}

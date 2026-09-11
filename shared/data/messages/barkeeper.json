@@ -1,0 +1,62 @@
+{
+  "orderComing": [
+    "Gerne, {user}, {possessive} {drink} kommt sofort.",
+    "Alles klar, {user} - {possessive} {drink} ist gleich fertig.",
+    "Kommt sofort, {user}! {possessiveCap} {drink} ist unterwegs.",
+    "Wird gemacht, {user}! {possessiveCap} {drink} kommt gleich.",
+    "Mach ich, {user} - {possessive} {drink} braucht nur einen Moment."
+  ],
+  "snackOrderTaken": [
+    "Alles klar, {user}! {kellner} bringt dir gleich **{snack}** an {table}.",
+    "Notiert, {user} - {kellner} bringt dir **{snack}** gleich an {table}.",
+    "Mach ich, {user}! {kellner} kümmert sich um **{snack}** für {table}.",
+    "Kommt sofort, {user} - {kellner} bringt dir **{snack}** an {table}."
+  ],
+  "orderDrinkRequest": [
+    "Hey {barkeeper}, kannst du mir mal {artikel} {drink} machen?",
+    "{barkeeper}, hast du kurz Zeit für {artikel} {drink} für mich?",
+    "Sag mal {barkeeper}, wäre gerade {artikel} {drink} drin?",
+    "{barkeeper}, mach mir doch bitte {artikel} {drink}, wenn du kurz Zeit hast.",
+    "Ich hätte jetzt Lust auf {artikel} {drink} - machst du mir eins, {barkeeper}?"
+  ],
+  "stockOut": [
+    "Geht kurz ins Lager, um {label} nachzuholen...",
+    "Muss kurz {label} nachfüllen, ist gleich wieder da...",
+    "Huscht schnell ins Lager - {label} sind alle.",
+    "Einen Moment, {label} müssen erst nachgeholt werden..."
+  ],
+  "restocked": [
+    "Ist zurück - {label} sind wieder aufgefüllt.",
+    "Zurück mit vollem Nachschub an {label}.",
+    "So, {label} sind wieder da."
+  ],
+  "coffeeCleaningStart": [
+    "Die Kaffeemaschine blinkt rot - sie muss kurz reinigen.",
+    "Die Maschine will jetzt unbedingt reinigen...",
+    "Die Kaffeemaschine fängt an zu reinigen - kurz Geduld."
+  ],
+  "coffeeCleaningDone": [
+    "Die Maschine ist wieder einsatzbereit.",
+    "Fertig - die Kaffeemaschine läuft wieder.",
+    "So, die Maschine ist wieder startklar."
+  ],
+  "coffeeCleanSounds": [
+    "*bwwww*",
+    "*pfft pfft pfft pfft*",
+    "*klonk*",
+    "*zisch*",
+    "*brrrrrrt*",
+    "*tock tock tock*",
+    "*gluck gluck*",
+    "*piiiep*"
+  ],
+  "itemDropped": [
+    "Oh Mist, da ist mir grad was runtergefallen.",
+    "Autsch, das wollte ich jetzt nicht fallen lassen.",
+    "Verflixt, das ist mir aus der Hand gerutscht.",
+    "Uups, das hätte ich besser festgehalten.",
+    "Na toll, jetzt liegt das am Boden.",
+    "Mist, das ist mir glatt entglitten.",
+    "Verdammt, das wär mir fast auf den Fuß gefallen."
+  ]
+}
